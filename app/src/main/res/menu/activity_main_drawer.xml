@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/allInbox"
+            android:title="All InBox"/>
+
+    </group>
+
+    <item android:title="Mail">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/resieved"
+                    android:title="recieved"/>
+                <item
+                    android:id="@+id/sent"
+                    android:title="Sent"/>
+                <item
+                    android:id="@+id/notRead"
+                    android:title="Not read"/>
+                <item
+                    android:id="@+id/enviar"
+                    android:title="No enviar"/>
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Other options">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_share"
+                    android:title="Share"/>
+                <item
+                    android:id="@+id/nav_send"
+                    android:title="Send"/>
+            </group>
+        </menu>
+    </item>
+
+</menu>
